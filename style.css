@@ -1,0 +1,10 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); */
+@font-face {
+    font-family: "Didot", sans-serif;
+    src: url('font/Didot-Medium/Didot-Medium.ttf') format("Truetype");
+}
+
+body {
+    background-color: #F9EFF1;
+    font-family: "Didot", sans-serif;
+}
