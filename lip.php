@@ -25,7 +25,12 @@
                                 <img src="pic/gloss-<?= $LipGloss['name']; ?>.jpg" alt="">
                                 <div class="card-body">
                                     <div class="card-title fs-5"><?= $LipGloss['name']; ?> color</div>
-                                    <div class="card-text mb-2">price : <?php if($LipGloss['name'] == 'orange') { echo number_format($LipGloss['price'] - ( $LipGloss['price'] * 0.2 ), 0); } else { echo $LipGloss['price']; } ?> Baht <?php if($LipGloss['name'] == 'orange') { echo "( 20% discount from " . $LipGloss['price'] . " baht )"; } ?></div>
+                                    <div class="card-text mb-2">price : 
+                                        <?php if($LipGloss['name'] == 'orange') 
+                                        { echo number_format($LipGloss['price'] - ( $LipGloss['price'] * 0.2 ), 0); } 
+                                        else { echo $LipGloss['price']; } ?> Baht 
+                                        <?php if($LipGloss['name'] == 'orange') { echo "( 20% discount from " . $LipGloss['price'] . " baht )"; } ?>
+                                    </div>
                                     <a href="lipdetails.php?name=<?= $LipGloss['name']; ?>&t=gloss" style="background-color: #594346; color: #F9EFF1;" class="btn btn">Shop now</a>
                                 </div>
                             </div>

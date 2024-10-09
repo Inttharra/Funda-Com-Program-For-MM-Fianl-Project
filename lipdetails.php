@@ -56,7 +56,9 @@
                             <img src="pic/<?= $NameOfProductResult; ?>" alt="" class="img-fluid rounded-start">
                         </div>
                         <div class="col-12 col-sm-12 col-md-8">
-                            <?php if($TypeOfLip == "gloss") { $productDetail = findProduct($NameOfProduct, $LipGloss); } else if ($TypeOfLip == 'tint') { $productDetail = findProduct($NameOfProduct, $LipTint); } ?>
+                            <?php   if($TypeOfLip == "gloss") { $productDetail = findProduct($NameOfProduct, $LipGloss); } 
+                                    else if ($TypeOfLip == 'tint') { $productDetail = findProduct($NameOfProduct, $LipTint); } 
+                            ?>
                             <div class="card-body">
                                 <div class="card-title fs-4"><?php if($TypeOfLip == "gloss") { echo "Lip gloss"; } else { echo "Lip tint"; } ?> <?= $productDetail['name']?> color</div>
                                 <div class="card-text mb-1"><?= $productDetail['details']; ?></div>

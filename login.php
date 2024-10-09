@@ -1,7 +1,7 @@
 <?php include 'php/data.php';
     session_start();
     if(isset($_SESSION['admin'])) {
-        header('location: admin_dashboard.php');
+        header('location: order.php');
     }
 ?>
 <!DOCTYPE html>

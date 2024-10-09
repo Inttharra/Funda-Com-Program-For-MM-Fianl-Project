@@ -81,9 +81,13 @@
                                 <div class="col-12">
                                     <div class="form-label ms-1">Status</div>
                                         <select name="data[<?= $id ?>][status]" class="form-select">
-                                            <option value="<?= $data[$id]['status']; ?>"><?= $data[$id]['status']; ?></option>
-                                            <option value="Mark as Delivered">Mark as Delivered</option>
-                                            <option value="Mark as Not Delivery">Mark as Not Delivery</option>
+                                            <?php if($data[$id]['status'] == "Mark as Delivered") { ?>
+                                                <option value="<?= $data[$id]['status'] ?>"><?= $data[$id]['status'] ?></option>
+                                                <option value="Mark as Not Delivery">Mark as Not Delivery</option>
+                                            <?php } else { ?>
+                                                <option value="<?= $data[$id]['status'] ?>"><?= $data[$id]['status'] ?></option>
+                                                <option value="Mark as Delivered">Mark as Delivered</option>
+                                            <?php } ?>
                                         </select>
                                 </div>
                             </div>
@@ -105,3 +109,6 @@
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
+
+<!-- <option value="Mark as Delivered">Mark as Delivered</option>
+                                            <option value="Mark as Not Delivery">Mark as Not Delivery</option> -->
