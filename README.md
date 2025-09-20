@@ -5,7 +5,7 @@ It is a web application built with **PHP & SQL**, designed to facilitate transac
 
 ## 🛠 Tech Stack  
 - 💻 **Frontend**: HTML, CSS, JavaScript  
-- ⚙️ **Backend**: PHP, MySQL  
+- ⚙️ **Backend**: PHP
 - 🎨 **Responsive UI**  
 
 ## 🤝 Contributors
